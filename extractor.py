@@ -8,3 +8,7 @@ phoneRegex = re.compile(r'''(
     \d{4}                           # last 4 digits
     (\s*(ext|x|ext.)\s*\d{2,5})?    # extension
     )''', re.VERBOSE)
+
+emailRegex = re.compile(r'[a-zA-Z0-9]+@[a-zA-Z0-9]+.com')
+
+page_contents = pyperclip.paste()
