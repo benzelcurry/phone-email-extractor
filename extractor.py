@@ -9,6 +9,6 @@ phoneRegex = re.compile(r'''(
     (\s*(ext|x|ext.)\s*\d{2,5})?    # extension
     )''', re.VERBOSE)
 
-emailRegex = re.compile(r'[a-zA-Z0-9]+@[a-zA-Z0-9]+.com')
+emailRegex = re.compile(r'[a-zA-Z0-9._-]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,}')
 
 page_contents = pyperclip.paste()
